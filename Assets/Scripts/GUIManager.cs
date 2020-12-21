@@ -21,4 +21,11 @@ public class GUIManager : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+
+    public void OnHelp()
+    {
+        SceneManager.LoadScene("Help");
+    }
+
+
 }
