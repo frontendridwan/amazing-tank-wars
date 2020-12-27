@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class loading : MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class loading : MonoBehaviour
             nilaiSekarang += nilaiKecepatan * Time.deltaTime;
             Debug.Log ((int) nilaiSekarang);
         } else {
-            Application.LoadLevel("Menu");
+            // Application.LoadLevel("Menu");
+            SceneManager.LoadScene("Menu");
         }
         masukanLoadingbar.GetComponent<Image> ().fillAmount = nilaiSekarang / 100;
         
