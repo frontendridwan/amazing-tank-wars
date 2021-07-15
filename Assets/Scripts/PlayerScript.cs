@@ -12,7 +12,7 @@ public class PlayerScript : MonoBehaviour
 	// Vector3 kebawah;
 
     public int aksi;
-    float speed = 7;
+    // float speed = 7;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +26,13 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         if(Input.GetKey("right"))
-            transform.position = transform.position + (kekanan * speed * Time.deltaTime);
+            transform.position = transform.position + (kekanan * aksi * Time.deltaTime);
         else if (Input.GetKey("left"))
-            transform.position = transform.position + (kekiri * speed * Time.deltaTime);
+            transform.position = transform.position + (kekiri * aksi * Time.deltaTime);
         else if(Input.GetKey("d"))
-            transform.position = transform.position + (kekanan * speed * Time.deltaTime);
+            transform.position = transform.position + (kekanan * aksi * Time.deltaTime);
         else if (Input.GetKey("a"))
-            transform.position = transform.position + (kekiri * speed * Time.deltaTime);
+            transform.position = transform.position + (kekiri * aksi * Time.deltaTime);
         
     }
 }

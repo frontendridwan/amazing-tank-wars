@@ -27,5 +27,18 @@ public class GUIManager : MonoBehaviour
         SceneManager.LoadScene("Help");
     }
 
+    public void OnBack()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
+    public void OnOption()
+    {
+        SceneManager.LoadScene("Option");
+    }
+
+    public void OnCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
